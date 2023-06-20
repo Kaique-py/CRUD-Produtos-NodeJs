@@ -6,9 +6,10 @@ const Produtos = sequelize.define('Produtos', {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
+    allowNull: false,
   },
   nome: {
-    type: DataTypes.CHAR[30],
+    type: DataTypes.CHAR,
     allowNull: false,
   },
   valor: {
@@ -16,7 +17,7 @@ const Produtos = sequelize.define('Produtos', {
     allowNull: false,
   },
   descricao: {
-    type: DataTypes.CHAR[250],
+    type: DataTypes.CHAR,
     allowNull: false,
   },
 });
